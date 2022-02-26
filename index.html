@@ -74,10 +74,12 @@
                             <td>Mark</td>
                             <td>Otto</td>
                             <td class="text-center">
-                                <button type="button" class="btn btn-warning btn-sm px-3">
+                                <button type="button" data-mdb-toggle="modal" data-mdb-target="#viewStatic"
+                                    data-mdb-whatever="@mdo" class="btn btn-warning btn-sm px-3">
                                     <i class="fas fa-eye"></i>
                                 </button>
-                                <button type="button" class="btn btn-primary btn-sm px-3">
+                                <button type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal"
+                                    data-mdb-whatever="@mdo" class="btn btn-primary btn-sm px-3">
                                     <i class="fas fa-edit"></i>
                                 </button>
                                 <button type="button" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop"
@@ -140,6 +142,27 @@
             </div>
         </div>
         <!-- delete modal end -->
+
+        <!-- view modal start -->
+        <div class="modal fade" id="viewStatic" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
+            aria-labelledby="viewStaticLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1509112756314-34a0badb29d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Zm9ybWFsfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                                class="img-fluid img-responsive img-thumbnail" alt="">
+                        </figure>
+
+                    </div>
+                    <div class=" modal-footer">
+                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- view modal end -->
 
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
